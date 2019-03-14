@@ -1,34 +1,39 @@
 # The Opioid Epidemic & Its Socioeconomic Effects
 ### By Daniel Connolly & Bryce Mann
 
-We sought to investigate various differences between people who have used opioids, specifically heroin, and the people who do not. We utilized data from the National Survey of Drug Use and Health to perform several experiments regarding the use of opioids in the United States. To comply with the NSDUH guidelines, we will not share the raw data, but will instead share our findings in the form of various statistics and plots.
+We sought to investigate how the use of opioids, and specifically heroin, has changed over the last two decades as well as to look into various differences between people who have used opioids and the people who do not. The increasing use of opioids in the US is regularly referred to as a crisis or epidemic, so we employed data from the National Survey on Drug Use and Health (NSDUH) to explore the existence and severity of this crisis. To comply with the NSDUH guidelines, we will not share the raw data, but will instead share our findings in the form of various statistics we compute and plots we visualize. Although we explored a great deal of relationships between opioid use and other socioeconomic and demographic factors, we present here only the most interesting and meaningful of the relationships we found. For more details, you can read [this Jupyter notebook](https://github.com/djconnolly27/DataScienceProject1/blob/master/project1/project1_updated.ipynb).
 
 ## Experiment 1: Characterizing the Epidemic
 
-While it is often assumed that opioid use has reached epidemic levels, we first tested this idea for ourselves. To do so, we measured the percentage of respondents who had ever used heroin.
+While it is often assumed that opioid use has reached epidemic levels, we first tested this idea for ourselves. To do so, we computed the percentage of respondents who had ever used heroin over time and plotted the results.
 
 ![](heroin_use.png)
 
-As we can see, the percentage of respondents that have ever used heroin has increased by approximately 0.5 percentage points between 2002 and 2016, an effect size of +40%. If we assume the respondents perfectly represent the 325 million people in the US, this increase means that 1.625 million more people had ever used heroin as of 2016 as compared to 2002. According to the CDC, an “epidemic refers to an increase, often sudden, in the number of cases of a disease above what is normally expected in that population in that area.” Over the course of 14 years, an increase of 1.625 million people would seem to confirm that heroin use has reached epidemic levels.
+As we can see, the percentage of respondents who say that they have used heroin has increased by approximately 0.5 percentage points between 2002 and 2016, an effect size of **+40%**. If we were to assume the respondents perfectly represent the 325 million people in the US, this increase would mean that 1.625 million more people used heroin as of 2016 as compared to 2002. According to the CDC, an “epidemic refers to an increase, often sudden, in the number of cases of a disease above what is normally expected in that population in that area.” Over the course of 14 years, an increase of 1.625 million people would seem to confirm that heroin use has reached epidemic levels.
 
-To further confirm that the increase in the use of opioids is not simply a function of drug use as a whole increasing, we also looked into the use of crack, lsd, and pain relievers for non-medical purposes. Over the same period as heroin, or 2002 to 2016, crack use has declined by 13% and lsd use has declined by 23%. Additionally, the nonmedical use of pain relievers has declined by 6%. For more specific information and plots regarding these other drugs, you can refer to our jupyter notebook. These effect sizes indicate that an epidemic is unique to the use of heroin, as even the use of pain relievers has declined.
+To further confirm that the increase in the use of opioids is not simply a function of drug usage as a whole increasing, we also looked into the use of crack, LSD, and painkillers for non-medical purposes. From 2002 to 2016, crack use declined by **-13%** and LSD use declined by **-23%**. Additionally, the nonmedical use of pain relievers declined by **-6%**. The plots displaying these changes are in our [Jupyter notebook](https://github.com/djconnolly27/DataScienceProject1/blob/master/project1/project1_updated.ipynb). Because the utilization of these other drugs and painkillers has declined, as these effect sizes indicate, the epidemic seems to be unique to heroin and perhaps other similar drugs not included in the NSDUH under the umbrella of pain relievers.
 
-We next wanted to understand when in people’s lifetimes they began to use opioids. As a result, we plotted the average age at which respondents said they began using heroin, or pain relievers, over the years.
+Next, we wanted to understand when in people’s lifetimes they began to use opioids. Popular conception of the opioid epidemic led us to hypothesize that the average age at which people began using heroin and painkillers would increase. As a result, we plotted this average start age in each year in which survey data was collected.
 
 ![](age_first_use.png)
+
+Between 2002 and 2016, the average age at which people first used heroin increased by 2.5 years, and the average age at which people started using painkillers increased by 2 years. To break down this trend even more, we looked at five percentile groups for the starting age of heroin users.
+
 ![](percentiles.png)
 
-Between 2002 and 2016, the average age at which people first used heroin increased by 2.5 years, and the average age people started using painkillers increased by 2 years. The increase is due to so-called “late-starters,” which is consistent with the common narrative that opioids have begun to impact older people through new and different pathways.
+The highest percentile groups, representing the oldest ages at which people start heroin, have increased the most. This indicates that our notion that the increase in heroin use is due to so-called “late-starters” is correct, which is consistent with the common narrative that opioids have begun to impact older people through new and different pathways.
+
+We also wanted to understand how the crisis has impacted different communities, so we split the NSDUH respondents by the type of area in which they live (i.e. urban, suburban, rural).
 
 ![](pctByArea.png)
 
-We checked the way heroin has impacted different communities as well. By separating our data into those that live in urban, suburban, and rural areas, we were able to see that while heroin use has increased across all groups (urban, suburban, and rural), it has had notably different effects on each. For instance, we can see that rural heroin use has increased the most, while urban use has increased the least. This is also fairly consistent with the idea that opioid use is affecting people through new pathways.
+By separating our data into urban, suburban, and rural dwellers, we were able to see that while heroin use has increased across all three groups, it has changed in notably different ways for each. For instance, we can see that rural heroin use has increased the most, while urban use has increased the least.
 
-Finally, we looked into the differences in heroin use between those who had served in the military and those who had not.
+Finally, we looked into the differences in heroin use between military service members (those who had served at any point in time) and nonmilitary respondents.
 
 ![](service.png)
 
-As this plot elucidates, the percentage of each population that uses heroin is much higher amongst those who have served in the military than those who have not, with effect sizes of over +100% for many of the years reported. This confirmed our expectation that drug use would be higher in the military than the rest of the population.  
+As this plot elucidates, a higher percentage of service members have used heroin than the general population, with effect sizes of over **+100%** for many of the years reported. This confirmed our expectation that drug use would be higher in the military than the rest of the population.  
 
 ## Experiment 2: Socioeconomic Effects
 
