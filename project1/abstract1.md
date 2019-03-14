@@ -1,2 +1,2 @@
-# Project Abstract
-We are always hearing about the worsening of the opioid epidemic, so we decided to attack the problem head first and find out for ourselves through the power of data.
+# Abstract
+Since 2002, heroin use has increased by 40%, while the use of other drugs has declined in that same period. We explored the reasons behind this, and saw that the fraction of heroin users considered late-starters is also increasing in that time frame. In our probes into NSDUH data, we found a major discrepancy between the household incomes of users and nonusers as well, a discovery which we sought to explain through several unique experiments.
