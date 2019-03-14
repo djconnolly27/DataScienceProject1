@@ -1,4 +1,4 @@
-# The Opioid Epidemic & Its Socioeconomic Effects
+### The Opioid Epidemic & Its Socioeconomic Effects
 
 Daniel Connolly & Bryce Mann
 
