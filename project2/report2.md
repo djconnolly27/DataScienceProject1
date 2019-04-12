@@ -74,6 +74,6 @@ The final path we go down in this line of questioning is taking the previous mod
 We did, however, find a slightly interesting relationship between session duration and reported RPE by themselves. It appears that the rate of perceived exertion has a parabolic relationship with the duration of each training session. With a p-value of 0.000 and an effect size of 0.106, this relationship is certainly statistically significant. It appears to show that the athletes perceive the longest sessions as requiring an average amount of exertion, while the easiest and most difficult session tend to be shorter.
 
 
-Finally, we look at the relationship between several categorical variables such as nutrition, illness, and menstruation and the number of potential hits a player experiences in a game that day. Of the variables into which we look, menstruation is definitively the most interesting, as it appears that menstruation tends to lead players to be involved in more hits or tackles during games.
+Finally, we look at the relationship between several categorical variables such as nutrition, illness, and menstruation and the number of potential hits a player experiences in a game that day. Of the variables into which we look, menstruation is definitively the most interesting, as it appears that menstruation tends to lead players to be involved in more hits or tackles during games, as shown below.
 
 <img src="plots/hits_menstr.png" width="400">
