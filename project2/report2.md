@@ -49,7 +49,7 @@ At this point, we look at how well the number of potential hits predicts wellnes
 
 <img src="plots/keyfig.png" width="500">
 
-As the plot above shows, as the number of potential hits increases, the players tend to experience the effects of DOMS more and more strongly two days later. This suggests that the theory of delayed onset muscle soreness has statistical validity to it.
+As the plot above shows, as the number of potential hits increases, the players tend to experience the effects of DOMS more and more strongly two days later. This suggests that the popular conception of delayed onset muscle soreness has statistical validity to it.
 
 
 ### Wellness Effects
