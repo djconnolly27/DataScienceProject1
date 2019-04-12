@@ -1,7 +1,7 @@
 # Health Metrics in Womens Rugby 7s
 #### Daniel Connolly and Bryce Mann
 
-We investigate womens' rugby 7s data provided by the Canadian national team, including looking into how fatigue and sleep affect wins and losses, delayed onset muscle soreness, and whether potential hits predict soreness, fatigue, and other measures of personal wellness. To comply with 2019 Datafest challenge guidelines, from which we received the data, we do not share the raw data and will keep the findings of our analysis private until May 4. Although we explore an immense number of relationships between wellness, effort, and game data, we present here only the most meaningful of our tests. For more information, you can read [this Jupyter notebook](proposal2.md).
+We investigate womens' rugby 7s data provided by the Canadian national team, including looking into how fatigue and sleep affect wins and losses, delayed onset muscle soreness, and whether potential hits predict soreness, fatigue, and other measures of personal wellness. To comply with 2019 Datafest challenge guidelines, from which we received the data, we do not share the raw data and will keep the findings of our analysis private until May 4. Although we explore an immense number of relationships between wellness, effort, and game data, we present here only the most meaningful of our tests. For more information, you can read [this Jupyter notebook](https://github.com/djconnolly27/DataScienceProjects/blob/master/project2/project2.ipynb).
 
 
 ### Methodology
