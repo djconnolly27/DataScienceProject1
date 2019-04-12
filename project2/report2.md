@@ -36,12 +36,22 @@ Next we look deeper into the points scored and allowed in each game. We ran mult
 These models have R-squared values about two and three times higher than before, but they still aren’t high enough to be considered a good predictor of the points scored for and against each team. We also see one significant variable in the PointsScored model, where SleepQuality has a very low p-value, suggesting that the effect sleep quality has on the teams’ points is not due to random variation. This turned out to not lead anywhere though, as we isolated it by itself and with other subsets of the dependent variables only to find it become either not significant anymore or lower the R-squared values, neither of which are useful to us in trying to predict anything about the teams’ games.
 
 ### Delayed Onset Muscle Soreness
-
-As it is often anecdotally supported, we sought to investigate the validity of delayed onset muscle soreness, or DOMS, which is the pain and stiffness supposedly felt in muscles most often two days after a workout. With our data set organized to allow for looking at the next day’s data, we first look into how sleep quality affects fatigue. From our understanding of DOMS, we expect that one day after (i.e. one sleep removed) experiencing a poor night’s sleep, the athletes will be the most fatigued.
+As it is often anecdotally supported, we sought to investigate the validity of delayed onset muscle soreness, or DOMS, which is the pain and stiffness supposedly felt in muscles most often two days after a workout. With our data set organized to allow for looking at the next day’s data, we first look into how sleep quality affects fatigue. From our understanding of DOMS, we expect that one day after (i.e. one sleep cycle removed) experiencing a poor night’s sleep, the athletes will be the most fatigued.
 
 <img src="plots/sleepFat.png" width="300"> <img src="plots/sleepFatNext.png" width="300"> <img src="plots/sleepFatTwo.png" width="300">
 
 As the plots show, sleep quality appears to affect perceived fatigue most the day immediately following the poor sleep. With each successive day, the slope of the line linearly regressed to the data decreased, suggesting the impact on fatigue of the sleep quality on a given night decreases with each successive day.
+
+Given that rugby is a definitively contact-heavy sport, we also investigate whether the number of potential hits or tackles a player experiences impacts their future wellness. Based on our initial exploration of the data, including plotting the players’ movements throughout games and the accelerations they experienced, we defined a potential hit as when the absolute value of their total acceleration in all three directions was greater than 5.8 meters per second squared.
+
+At this point, we look at how well the number of potential hits predicts wellness data over the course of the three days after the hits take place. Of all of the data available to us, the only wellness factor whose dependence on potential hits had a statistically significant pvalue (p=0.000) and r-squared (r^2=0.115) was soreness two days after the hits occurred. One day after the hits, with soreness as the dependent value, the pvalue was 0.022, but the r-squared value was low, at just 0.031. Three days after the hits, the pvalue for soreness' dependence on potential hits was 0.000 and the r-squared value had decreased to 0.104 from 0.115 two days after the hits. In the plot below, not that -3 represents the highest degree of soreness and 3 the lowest degree of soreness.
+
+<img src="plots/soreness_twodays.png" width="400">
+
+As the plot above shows, as the number of potential hits increases, the players tend to experience the effects of DOMS more and more strongly two days later. This suggests that the theory of delayed onset muscle soreness may have statistical validity to it.
+
+
+### Wellness Effects
 
 Here we try to see whether the RPE (or rate of perceived exertion) that the athletes felt after they trained or played could be a predictor of their wellness scores the next morning. Our initial exploration is to look at the correlation matrix that contains all of these values, which can be seen below.
 
@@ -64,9 +74,6 @@ The final path we go down in this line of questioning is taking the previous mod
 We did, however, find a slightly interesting relationship between session duration and reported RPE by themselves. It appears that the rate of perceived exertion has a parabolic relationship with the duration of each training session. With a p-value of 0.000 and an effect size of 0.106, this relationship is certainly statistically significant. It appears to show that the athletes perceive the longest sessions as requiring an average amount of exertion, while the easiest and most difficult session tend to be shorter.
 
 
+Finally, we look at the relationship between several categorical variables such as nutrition, illness, and menstruation and the number of potential hits a player experiences in a game that day. Of the variables into which we look, menstruation is definitively the most interesting, as it appears that menstruation tends to lead players to be involved in more hits or tackles during games.
 
-### Potential Hits as a Predictor of Wellness
-
-Finally, we investigate whether the number of potential hits a player experiences impacts their future wellness. Based on our initial exploration of the data, including plotting the players’ movements throughout games and the accelerations they experienced, we defined a potential hit as when the absolute value of their total acceleration in all three directions was greater than 5.8 meters per second squared.
-
-<img src="plots/rpe_duration.png" width="400">
+<img src="plots/hits_menstr.png" width="400">
