@@ -18,14 +18,19 @@ Additionally, we investigate the effects of workouts and sleep over the course o
 
 ### Predicting Game Outcome and Scoring
 Our first exploration is to see whether the players’ morning wellness scores impacted the outcomes of their games (W or L, encoded as 1 and 0 respectively), the amount of points their team scored, and the amount of points they gave up. To give us an initial idea of what type of relationships these variables have with each other we looked at the correlation matrix that contains all of these values.
+
 <img src="plots/game_corr.png" width="600">
+
 There is a lot of information here, some of it looking promising. Since all of the wellness scores were originally scored from 1-7, with 1 being the worst, the fact that these wellness Z-scores are positively correlated with the game outcomes and the points scored and are all negatively correlated with points allowed are good signs. This suggests that the better players are feeling on the mornings of their games they are more likely to win and score more points, while giving up fewer points. This leads us to run multiple regression on each of these three situations to see if any of these independent variables could have predictive power.
 
 First we run a logistic regression model, with the game outcome being the dependent variable and the wellness data being independent: the results of this regression can be seen below.
+
 <img src="plots/outcome.png" width="400">
+
 Unfortunately there doesn’t seem to be much here. The psuedo R-squared value is low meaning the model is not great at predicting the dependent variable and none of the independent variables seem to have much significance, with all of their p-values well above the established threshold of .5. It is the same story when we try to isolate small subsets of the independent variables or single ones: nothing seems to be significant or very useful in predicting whether games will be won or lost.
 
 Next we look deeper into the points scored and allowed in each game. We ran multiple regression models on each of these situations; both of these results can be seen below.
+
 <img src="plots/offense.png" width="250"> <img src="plots/defense.png" width="250">
 
 ### Delayed Onset Muscle Soreness
