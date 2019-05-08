@@ -23,3 +23,5 @@ Comparing the  two models, it appears that the best regression models consistent
 
 
 In terms of future work, I believe the neural network can still be significantly improved such that it is nearly competitive with the regression models. I began work on the neural network late in the project, and thus was unable to dedicate quite as much time to its development as it deserved. Specifically, I believe that more automated hyperparameter tuning would be key to improvements in the performance of the neural network. Moreover, in my notebook, I spend a great deal of time investigating possible nonlinear relationships between variables in the dataset; this work could easily be built upon in future work. One could also choose to more specifically focus on minimizing the log-loss of the models in order to score higher in the DrivenData competition or more broadly on heart disease, bringing in domain knowledge to improve the models.
+
+Learn more about the project in [my Jupyter notebook](https://github.com/djconnolly27/DataScienceProjects/blob/master/project3/project3.ipynb).
