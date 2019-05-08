@@ -1,5 +1,5 @@
-# DataScienceProjects
-This repository contains the three projects on which I worked in Data Science during the spring semester of 2019. To learn more about the specifics of these projects, I suggest beginning with the abstracts of each project, which I will link to below.
+# Data Science Projects
+This repository contains the three projects on which I worked in Data Science during the spring semester of 2019. To learn more about the specifics of these projects, I suggest beginning with the abstracts of each project, which I link to below.
 
 Project 1 examines the Opioid Epidemic: [abstract](https://github.com/djconnolly27/DataScienceProjects/blob/master/project1/abstract1.md)
 
