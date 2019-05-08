@@ -20,8 +20,11 @@ To show just how quickly one can implement regression models with a high degree 
 
 <img src="model_accuracies.png" width="600">
 
+###### Non-Linear Variable Relationships
 
-###### Conclusions and Future Work
+I also improve the performance of my regression models by manually adding pairwise nonlinear relationships such as the product of two variables and the Euclidean distance between them to the dataset. Looking at nearly two thousand of these potential nonlinearities, I run random forest regression in order to determine the most important combinations of these variables. Taking these new features, I run a regression model with the original dataset and between 1 and 100 of the top features to find that the optimal number of these features is 9. The addition of these new nonlinear features provides a two percent improvement in the accuracy of my model (79% vs. 81%).
+
+##### Conclusions and Future Work
 
 Comparing the  two models, it appears that the best regression models consistently outperform the neural network on this dataset. After many epochs, the neural network manages to perform slightly better than a fair coin flip, with its accuracy rising to 60% at its peak. In contrast, the mere mean accuracy of the logistic regression and bayesian ridge models is close to 83%. As a result, it is quite clear that, when first implementing deep learning, it is important to test the results against more standard, easy to understand regression models. Often, the regression models will actually prove more accurate during these early stages of one's data science career.
 
